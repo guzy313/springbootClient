@@ -1,0 +1,18 @@
+server:
+  port: 8088
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+spring:
+  boot:
+    admin:
+      client:
+        #springbootadmin server端服务器的部署地址
+        url: http://localhost:8000
+        instance:
+          prefer-ip: true
